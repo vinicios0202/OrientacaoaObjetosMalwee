@@ -2,12 +2,12 @@ package br.com.senai.exemplo;
 
 public class Pessoa {
 	
-	//Atributos
+	//ATRIBUTOS
 	private String nome;
 	private int anoDeNascimento;
 	private String sexo;
 	
-	//Metodos
+	//METODOS
 	public String getNome() {
 		return nome;
 	}
@@ -34,9 +34,9 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Nome: " + nome 
-				+"\nNascimento: " + anoDeNascimento 
-				+"\nSexo: " + sexo;
+		return "Nome: " + nome +
+				"\nNascimento: " + anoDeNascimento +
+				"\nSexo: " + sexo;
 	}
 	
 	

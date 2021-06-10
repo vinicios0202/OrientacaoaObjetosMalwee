@@ -1,24 +1,24 @@
 package br.com.senai.exemplo;
 
 import java.util.Scanner;
-public class MetodoController {
 
+public class MetodoController {
+	
 	Scanner tec = new Scanner(System.in);
+	
 	public void multiplicar() {
-		
-		
-		System.out.println("Informe o valor: ");
+		System.out.print("Informe o valor: ");
 		int valor = tec.nextInt();
 		
 		for(int i = 0; i <= 10; i++) {
-			System.out.println(valor + " x " + i + " = " + ( valor * i));
+			System.out.println(valor + " x " + i + " = " + (valor * i));
 		}
 	}
 	
 	public int somar() {
-		System.out.println("Informe o primeiro valor: ");
+		System.out.print("Informe o primeiro valor: ");
 		int valor1 = tec.nextInt();
-		System.out.println("Informe o segundo valor: ");	
+		System.out.print("informe o segundo valor: ");
 		int valor2 = tec.nextInt();
 		
 		int resultado = valor1 + valor2;
@@ -31,4 +31,5 @@ public class MetodoController {
 		
 		return resultado;
 	}
+	
 }
