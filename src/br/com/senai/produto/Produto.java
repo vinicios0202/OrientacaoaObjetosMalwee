@@ -43,7 +43,7 @@ public class Produto {
 		return valorTotalDoProduto;
 	}
 	public void setValorTotalDoProduto(double valorTotalDoProduto) {
-		System.out.println(valorUnitarioDoProduto * quantidadeDoProduto);
+		this.valorTotalDoProduto = valorTotalDoProduto;
 	}
 	
 
