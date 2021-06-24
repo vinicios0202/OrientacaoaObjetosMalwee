@@ -18,6 +18,8 @@ public class ProdutoController {
 		return tec.nextInt();
 	}
 
+
+	
 	public Produto cadastrarProduto() {
 		Produto produto = new Produto();
 
@@ -144,5 +146,14 @@ public class ProdutoController {
 		}
 		
 		produtos.remove(idProduto);
+	}
+	public void menu(){
+		System.out.println("\n-------- MENU ---------");
+		System.out.println("1) Cadastrar pessoa");
+		System.out.println("2) Listar pessoas cadastradas");
+		System.out.println("3) Editar Pessoas");
+		System.out.println("4) excluir Pessoas");
+		
+		
 	}
 }
