@@ -33,31 +33,27 @@ public class ProgramaPrincipal {
 		boolean sair = false;
 
 		do{
-			pessoaController.menu();
+			System.out.println("\n-------- MENU ---------");
+			System.out.println("1) Menu de Pessoas");
+			System.out.println("2) Menu de Produtos");
+			System.out.println("3) Menu de Vendas");
 
 			int opcao = pessoaController.leOpcao();
 			
-			public void menu(){
-				System.out.println("\n-------- MENU ---------");
-				System.out.println("1) Cadastrar pessoa");
-				System.out.println("2) Listar pessoas cadastradas");
-				System.out.println("3) Editar Pessoas");
-				System.out.println("4) excluir Pessoas");
-			}
 
 			switch(opcao){
 			
 			
 				case 1:
-					pessoaController.menu();
+					pessoaController.menu(pessoas);
 					break;
 
 				case 2:
-					produtoController.menu();
+					produtoController.menu(produtos);
 					break;
 					
 				case 3:
-					vendaController.menu();
+					vendaController.menu(vendas, produtos, pessoas);
 					break;
 					
 

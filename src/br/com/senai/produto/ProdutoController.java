@@ -147,13 +147,37 @@ public class ProdutoController {
 		
 		produtos.remove(idProduto);
 	}
-	public void menu(){
+	public void menu(List<Produto> produtos){
 		System.out.println("\n-------- MENU ---------");
-		System.out.println("1) Cadastrar pessoa");
-		System.out.println("2) Listar pessoas cadastradas");
-		System.out.println("3) Editar Pessoas");
-		System.out.println("4) excluir Pessoas");
+		System.out.println("1) Cadastrar Produto");
+		System.out.println("2) Listar Produtos cadastrados");
+		System.out.println("3) Editar Produtos");
+		System.out.println("4) excluir Produtos");
 		
+		int opcao = tec.nextInt();
+		switch (opcao) {
+		
+		case 1:
+			produtos.add(cadastrarProduto());
+			break;
+			
+		case 2:
+			listarProdutos(produtos);
+			break;
+			
+		case 3:
+			editarProduto(produtos);
+			break;
+			
+		case 4: 
+			excluirProduto(produtos);
+			break;
+			
+		default:
+			System.out.println("Opção invalida");
+		break;
+		
+		}
 		
 	}
 }
